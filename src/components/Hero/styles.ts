@@ -8,6 +8,7 @@ export const Formulario = styled.form`
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   &:before {
     position: absolute;
@@ -38,14 +39,4 @@ export const HeroTitle = styled.h2`
   @media (max-width: 768px) {
     font-size: 32px;
   }
-`
-export const BtnTema = styled.button`
-  background-color: ${(props) => props.theme.corPrincipal};
-  border: 1px solid ${(props) => props.theme.corPrincipal};
-  height: 40px;
-  padding: 0 16px;
-  font-size: 18px;
-  color: ${(props) => props.theme.corSecundaria};
-  margin-left: 8px;
-  cursor: pointer;
 `

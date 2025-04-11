@@ -18,8 +18,8 @@ function App() {
   return (
     <ThemeProvider theme={usandoTemaDark ? temaDark : temaLight}>
       <EstiloGlobal />
-      <Header />
-      <Hero trocaTema={trocaTema} />
+      <Header trocaTema={trocaTema} />
+      <Hero />
       <Container>
         <ListaVagas />
       </Container>

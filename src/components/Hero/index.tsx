@@ -1,16 +1,11 @@
-import { Formulario, Container, HeroTitle, BtnTema } from './styles'
+import { Formulario, Container, HeroTitle } from './styles'
 
-type Props = {
-  trocaTema: () => void
-}
-
-const Hero = (props: Props) => (
+const Hero = () => (
   <Formulario>
     <Container>
       <HeroTitle>
         As melhores vagas para tecnologia, design e artes visuais.
       </HeroTitle>
-      <BtnTema onClick={props.trocaTema}>Trocar tema</BtnTema>
     </Container>
   </Formulario>
 )
