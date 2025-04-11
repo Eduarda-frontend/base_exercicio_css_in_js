@@ -5,9 +5,9 @@ import ListaVagas from './containers/ListaVagas'
 import EstiloGlobal, { Container } from './styles'
 import { ThemeProvider } from 'styled-components'
 
-import temaLight from './theme/light'
+import temaLight from './themes/light'
 import { useState } from 'react'
-import temaDark from './theme/dark'
+import temaDark from './themes/dark'
 
 function App() {
   const [usandoTemaDark, setUsandoTemaDark] = useState(false)
