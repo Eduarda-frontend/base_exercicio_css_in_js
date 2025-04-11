@@ -1,13 +1,18 @@
-import styles from './Hero.module.css'
+import { Formulario, Container, HeroTitle, BtnTema } from './styles'
 
-const Hero = () => (
-  <form className={styles.form}>
-    <div className="container">
-      <h2 className={styles.heroTitle}>
+type Props = {
+  trocaTema: () => void
+}
+
+const Hero = (props: Props) => (
+  <Formulario>
+    <Container>
+      <HeroTitle>
         As melhores vagas para tecnologia, design e artes visuais.
-      </h2>
-    </div>
-  </form>
+      </HeroTitle>
+      <BtnTema onClick={props.trocaTema}>Trocar tema</BtnTema>
+    </Container>
+  </Formulario>
 )
 
 export default Hero
